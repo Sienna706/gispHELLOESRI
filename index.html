@@ -1,45 +1,20 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
- <!-- Load Calcite components from CDN -->
- <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.13.2/calcite.css" />
- <script type="module" src="https://js.arcgis.com/calcite-components/2.13.2/calcite.esm.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Display</title>
 
- <!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
- <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css" />
- <script src="https://js.arcgis.com/4.31/"></script>
+    <!-- ArcGIS JavaScript API CSS -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css">
 
- <!-- Load Map components from CDN-->
- <script
-   type="module"
-   src="https://js.arcgis.com/map-components/4.31/arcgis-map-components.esm.js"
- ></script>
-  </head>
+    <!-- ArcGIS JavaScript API -->
+    <script src="https://js.arcgis.com/4.24/"></script>
 
-  <body>
-    <arcgis-map basemap="arcgis/topographic" center="-118.805, 34.027" zoom="13">
-        <arcgis-zoom position="top-left"></arcgis-zoom>
-    </arcgis-map>
-  </body>
-
+    <!-- Your custom script will go here -->
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="viewDiv" style="height: 100%;"></div>
+</body>
 </html>
-<style>
-    html,
-    body,
-    arcgis-map {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
-</style>
-
-<script>
-
-    var esriConfig = {
-      apiKey: "AAPTxy8BH1VEsoebNVZXo8HurLTYWsTXfZEFnZzYoe0Qq8cXG42RyBzxxCf8LNPUCrguiZTxe9kt-PVcF03YsLc8ON6J7OoRkXDkDeuh5EdeP60-Wklid5Z7MRTXk0ahyt3hvlL9sm_EEMN1TxqfSgxFuV6RWNfyBO9y-aEeN-6eMOxENF8O9NaTULFOQiBL7TibVSUfmRsQLxZVtUWUsIRreMMNm464YpWY6sa7zahGaNM.AT1_k3us6Mzi"
-    };
-  
-  </script>
